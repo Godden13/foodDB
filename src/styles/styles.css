@@ -1,0 +1,89 @@
+
+body {
+  padding: 0;
+  margin: 0;
+  font: 16px;
+}
+
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 80px;
+  gap: 1rem;
+  width: 100%;
+}
+
+.foodItem {
+  padding: 100px 20px;
+  width: 300px;
+  height: 100px;
+  background-color: #8a1;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.head {
+  padding: 50px 100px;
+  background: linear-gradient(to bottom right, #2c1d38, #040118);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-evenly;
+}
+
+.head .title {
+  min-width: 500px;
+  text-align: center;
+  color: #fff;
+}
+
+.search {
+  padding: 20px;
+  font-size: 14px;
+  height: 40px;
+  flex: 1;
+  border: none;
+}
+
+.search button {
+  height: 20px;
+  border: none;
+  background-color: aquamarine;
+  cursor: pointer;
+  min-width: 90px;
+  text-align: center;
+}
+
+.foodItem h2 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  font-size: 20px;
+  margin: 0;
+  padding: 4px;
+  background: #080707cc;
+  color: #676bdd;
+}
+
+.foodItem p {
+  font-size: 15px;
+  overflow: scroll;
+  height: 100%;
+  color: #f0ffff;
+  background: #1d1e2680;
+  width: 100%;
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.foodItem:hover p{
+  opacity: 1;
+}

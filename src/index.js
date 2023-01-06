@@ -1,3 +1,16 @@
-import './styles/styles.css';
+import ui from './ui';
+import api from './api';
+import data from './data';
 
-document.getElementById('app').innerHTML = 'hellow world';
+function updateMeal(foodItems) {
+  data.setMenu(foodItems);
+  ui.renderMenu(data.getMenu());
+}
+
+ui.renderPage({
+  onSearch: (searchTerm) => {
+    api.searchMeals(searchTerm).then(updateMeal);
+  },
+});
+
+api.getFoodByLetter().then(updateMeal);
