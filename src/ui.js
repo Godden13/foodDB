@@ -38,6 +38,11 @@ function createMain() {
   return main;
 }
 
+// function createFooter() {
+//   const footer = document.createElement('footer');
+//   footer.classList.add('foot');
+// }
+
 function renderPage({ onSearch }) {
   appContainer.innerHTML = '';
   mainContainer = createMain();
